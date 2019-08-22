@@ -25,7 +25,7 @@ export class HistoryDetailComponent implements OnInit, OnDestroy {
 
   ngOnInit() {
     this.isLoaded = false;
-    this.route.params
+    this.sub1 = this.route.params
       .pipe(mergeMap((params: Params) => this.eventsService.getEventById(params.id)))
       .pipe(mergeMap((event: EventModel) => {
         this.event = event;

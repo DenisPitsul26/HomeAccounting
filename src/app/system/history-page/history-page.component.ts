@@ -62,16 +62,16 @@ export class HistoryPageComponent implements OnInit, OnDestroy {
     });
   }
 
-  private toggleFilterVisability(dir: boolean) {
+  private toggleFilterVisibility(dir: boolean) {
     this.isFilterVisible = dir;
   }
 
   openFilter() {
-    this.toggleFilterVisability(true);
+    this.toggleFilterVisibility(true);
   }
 
   onFilterApply(filterData) {
-    this.toggleFilterVisability(false);
+    this.toggleFilterVisibility(false);
     this.setOriginalEvents();
     const startPeriod = moment().startOf(filterData.period).startOf('d');
     const endPeriod = moment().endOf(filterData.period).endOf('d');
@@ -90,8 +90,11 @@ export class HistoryPageComponent implements OnInit, OnDestroy {
   }
 
   onFilterCancel() {
-    this.toggleFilterVisability(false);
+    this.toggleFilterVisibility(false);
     this.setOriginalEvents();
     this.calculateChartData();
   }
 }
+
+
+

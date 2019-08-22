@@ -21,7 +21,7 @@ export class PlanningPageComponent implements OnInit, OnDestroy {
   sub1: Subscription;
 
   constructor(private billService: BillService,
-              private  categoriesService: CategoriesService,
+              private categoriesService: CategoriesService,
               private eventsService: EventsService) { }
 
   ngOnInit() {

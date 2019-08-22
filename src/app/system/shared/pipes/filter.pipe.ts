@@ -17,7 +17,7 @@ export class FilterPipe implements PipeTransform {
         t[field] = t[field] === 'income' ? 'доход' : 'рacход';
       }
       if (field === 'category') {
-        t[field] = t['categoryName'];
+        t[field] = t.categoryName;
       }
       return t[field].toLowerCase().indexOf(value.toLowerCase()) !== -1;
     });

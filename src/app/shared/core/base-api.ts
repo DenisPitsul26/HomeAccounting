@@ -24,3 +24,12 @@ export class BaseApi {
     return this.http.put(this.getUrl(url), data);
   }
 }
+
+
+
+
+
+
+
+
+

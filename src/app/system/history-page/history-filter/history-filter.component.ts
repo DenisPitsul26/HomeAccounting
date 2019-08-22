@@ -56,9 +56,6 @@ export class HistoryFilterComponent implements OnInit {
   }
 
   applyFilter() {
-    console.log('type', this.selectedTypes);
-    console.log('type', this.selectedTypes);
-    console.log('type', this.selectedTypes);
     this.onFilterApply.emit({
       types: this.selectedTypes,
       categories: this.selectedCategories,

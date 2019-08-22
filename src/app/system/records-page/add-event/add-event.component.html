@@ -20,10 +20,7 @@
           [ngModel]="1"
           name="category"
         >
-          <option
-            *ngFor="let c of categories"
-            [value]="c.id"
-          >
+          <option *ngFor="let c of categories" [value]="c.id">
             {{c.name}}
           </option>
         </select>

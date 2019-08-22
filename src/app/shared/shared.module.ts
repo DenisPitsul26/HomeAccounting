@@ -9,9 +9,9 @@ import {RouterModule} from '@angular/router';
 
 @NgModule({
   imports: [ReactiveFormsModule, FormsModule, NgxChartsModule, RouterModule],
-  exports: [ReactiveFormsModule, FormsModule, NgxChartsModule, RouterModule, NotFoundComponent, LoaderComponent],
+  exports: [ReactiveFormsModule, FormsModule, NgxChartsModule, RouterModule, LoaderComponent],
   providers: [UsersService, AuthService],
-  declarations: [NotFoundComponent, LoaderComponent]
+  declarations: [LoaderComponent]
 })
 export class SharedModule {
 

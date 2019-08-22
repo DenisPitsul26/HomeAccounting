@@ -5,7 +5,7 @@ import {User} from '../../shared/models/user.model';
 import {Message} from '../../shared/models/message.model';
 import {AuthService} from '../../shared/services/auth.service';
 import {ActivatedRoute, Params, Router} from '@angular/router';
-import {fadeStateTrigger} from '../../shared/animations/fade-animation';
+import {fadeStateTrigger} from '../../shared/animations/fade.animation';
 import {Meta, Title} from '@angular/platform-browser';
 
 @Component({
